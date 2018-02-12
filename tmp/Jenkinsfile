@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent { label 'executor-v2' }
-
+    //agent { label 'executor-v2' }
+    agent none
     options {
         timestamps()
         buildDiscarder(logRotator(numToKeepStr: '30'))
